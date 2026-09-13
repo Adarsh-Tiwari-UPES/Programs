@@ -1,16 +1,21 @@
-//Q11: Write a program to input an integer and check whether it is even or odd using if–else.
+//Q13: Write a program to input a year and check whether it is a leap year or not using conditional statements.
 
 /*
 Sample Test Cases:
 Input 1:
-7
+2020
 Output 1:
-7 is odd
+Leap year
 
 Input 2:
-12
+1900
 Output 2:
-12 is even
+Not a leap year
+
+Input 3:
+2000
+Output 3:
+Leap year
 
 */
 
@@ -22,7 +27,6 @@ int main()
 
     printf("Enter a year: ");
     scanf("%d", &year);
-
 
     if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)) 
     {
